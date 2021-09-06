@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	background-color: gray;
+	color: #ffffff;
+}
+
+nav button {
+	background-color: #272C31;
+	border: 1px solid #329235;
+	color: #329235;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links a {
+	color: #ffffff;
+	margin-left: 10px;
+	text-decoration: none;
+}
