@@ -42,13 +42,16 @@ nav button {
 div.img {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	margin: 30px 0;
-	background-color: red;
 	height: 500px;
 	background-image: url("projectOne.jpg");
 	color: white;
 	background-size: cover;
+}
 
+.img div {
+	width: 30%;
 }
 
 
