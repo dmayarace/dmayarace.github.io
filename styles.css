@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000000;
+	margin: 0px;
+	margin-top:30px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.navLinks a {
+	color: #ffffff;
+	margin-left: 50px;
+	font-family: Serif;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+nav button {
+	display: none;
+	border-radius: 12px;
+	padding: 10px 30px;
+	background-color: #fcea97;
+	font-size: 24px;
+	color: #262002;
+	font-family: Georgia;
+}
+
+
+div.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-image: url("projectOne.jpg");
+	background-size: cover;
+}
+
+
+.about {
+	width: 40%;
+	margin: 30px;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: serif;
+}
+
+
+.about h1, .portfolio h1 {
+	font-size: 40px;
+	color: #fcea97;
+	font-family: Georgia;
+}
+
+.portfolio h1 {
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+.portfolio p {
+	color: #ffffff;
+	margin: 30px;
+	font-size: 20px;
+	font-family: serif;
+}
+
+
+section {
+	margin: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+
+.portLinks{
+	padding: 20px;
+}
+
+.portLinks a {
+	display: flex;
+	font-family: Serif;
+	font-size: 30px;
+	justify-content: center;
+}
+
+
+.imgOne {
+	background-image: url("images/Timsimgtwo.jpg");
+	background-size: cover;
+	width: 400px;
+	height: 269px;
+}
+.imgTwo {
+	background-image: url("images/Timsimgtwo.jpg");
+	background-size: cover;
+	width: 400px;
+	height: 269px;
+}
+.imgThree {
+	background-image: url("images/Timsimgtwo.jpg");
+	background-size: cover;
+	width: 400px;
+	height: 269px;
+}
+.imgFour {
+	background-image: url("images/Timsimgtwo.jpg");
+	background-size: cover;
+	width: 400px;
+	height: 269px;
+}
+
+.contactLink h1, a {
+	color: #fcea97;
+}
+
+.contactLink {
+	padding: 20px;
+	margin-left: 10px;
+}
+
+.contactLink a {
+	font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.navLinks {
+		display: none;
+	}
+	
+	nav button {
+		display:block;
+	}
+	
+	section {
+		width: 500px;	
+	}
+	
+	main section {
+		flex-wrap: wrap;
+	}
+	
+	main section article:nth-child(2) {
+		margin: 0;
+	}
+	
+	.img div {
+		width: 100%;
+		margin: 50px;
+	}
+	
+	.about {
+		display: block;
+		position: relative;
+		top: 384px;
+	}
+	
+	.about h1 {
+		text-align: center;
+	}
+	
+	.portfolio h1, .introPort p {
+		display: block;
+		position: relative;
+		top: 284px;
+	}
+	
+	.portfolio h1 {
+		text-align: center;
+	}
+
+	.portLinks, .contactLink {
+		position: relative;
+		top: 284px;	
+	}
+	
+}
+
