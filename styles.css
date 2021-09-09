@@ -76,11 +76,13 @@ div.img {
 	font-family: serif;
 }
 
+
 section {
 	height: 340px;
 	margin: 50px;
 	display: flex;
-	flex-direction: row;	
+	flex-flow: row wrap;
+	
 }
 
 
