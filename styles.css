@@ -16,12 +16,12 @@ nav {
 	color: #ffffff;
 }
 
-.nav-links {
+.navLinks {
 	display: flex;
 	justify-content: center;
 }
 
-.nav-links a {
+.navLinks a {
 	color: #ffffff;
 	margin-left: 50px;
 	font-family: Serif;
@@ -78,7 +78,7 @@ div.img {
 
 
 section {
-	height: 340px;
+	
 	margin: 50px;
 	display: flex;
 	flex-flow: row wrap;
@@ -129,13 +129,23 @@ section {
 	height: 269px;
 }
 
+.contactLink h1, a {
+	color: #fcea97;
+}
 
+.contactLink {
+	padding: 20px;
+	margin-left: 10px;
+}
 
+.contactLink a {
+	font-size: 30px;
+}
 
 
 
 @media screen and (max-width: 768px){
-	.nav-links {
+	.navLinks {
 		display: none;
 	}
 	
@@ -144,8 +154,7 @@ section {
 	}
 	
 	section {
-		width: 500px;
-		
+		width: 500px;	
 	}
 	
 	main section {
@@ -183,8 +192,8 @@ section {
 
 	.portLinks {
 		position: relative;
-		top: 284px;
-		
+		top: 284px;	
 	}
 	
 }
+
