@@ -16,11 +16,6 @@ nav {
 	color: #ffffff;
 }
 
-.navLinks {
-	display: flex;
-	justify-content: center;
-}
-
 .navLinks a {
 	color: #ffffff;
 	margin-left: 50px;
@@ -92,8 +87,7 @@ section {
 }
 
 .portLinks a {
-	color: #184d1a;
-	display:flex;
+	display: flex;
 	font-family: Serif;
 	font-size: 30px;
 	justify-content: center;
