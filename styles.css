@@ -81,8 +81,6 @@ section {
 
 
 .portLinks{
-	display: flex;
-	align-items: center;
 	padding: 20px;
 }
 
@@ -91,9 +89,6 @@ section {
 	font-family: Serif;
 	font-size: 30px;
 	justify-content: center;
-}
-.portLinks p {
-	z-index: 10;
 }
 
 
@@ -183,14 +178,10 @@ section {
 		text-align: center;
 	}
 
-	.portLinks {
+	.portLinks, .contactLink {
 		position: relative;
 		top: 284px;	
 	}
 	
-	.contactLink {
-		position: relative;
-		top: 284px;
-	}
 }
 
