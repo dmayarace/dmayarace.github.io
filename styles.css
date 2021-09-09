@@ -78,7 +78,6 @@ div.img {
 
 
 section {
-	
 	margin: 50px;
 	display: flex;
 	flex-flow: row wrap;
@@ -195,5 +194,9 @@ section {
 		top: 284px;	
 	}
 	
+	.contactLink {
+		position: relative;
+		top: 284px;
+	}
 }
 
