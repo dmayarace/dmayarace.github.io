@@ -1,187 +1,378 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-	background-color: #000000;
-	margin: 0px;
-	margin-top:30px;
+#vid{
+    width: 100%;
+    height: 100vh;
 }
 
 nav {
-	display: flex;
-	justify-content: center;
-	padding: 20px;
-	background-color: #000000;
-	color: #ffffff;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 180px;
 }
 
 .navLinks a {
-	color: #ffffff;
-	margin-left: 50px;
-	font-family: Serif;
-	font-size: 30px;
-	text-decoration: none;
+    color: #939189;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 5px 40px;
+    border-radius: 5px;
 }
 
-nav button {
-	display: none;
-	border-radius: 12px;
-	padding: 10px 30px;
-	background-color: #fcea97;
-	font-size: 24px;
-	color: #262002;
-	font-family: Georgia;
+a.smallAbout {
+    display: none;
 }
 
-
-div.img {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	background-image: url("projectOne.jpg");
-	background-size: cover;
+.navLinks a:hover {
+    background-color: rgba(147, 145, 137, 0.29);
+    color: #ffffff;
 }
 
-
-.about {
-	width: 40%;
-	margin: 30px;
-	color: #ffffff;
-	font-size: 20px;
-	font-family: serif;
+.mobileNav #mobileNavLinks {
+    display: none;
 }
 
-
-.about h1, .portfolio h1 {
-	font-size: 40px;
-	color: #fcea97;
-	font-family: Georgia;
+.mobileNav {
+    display: none;
+    position: absolute;
+    top: 10px;
 }
 
-.portfolio h1 {
-	margin-left: 30px;
-	margin-top: 50px;
+.mobileNav a {
+    color: #939189;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
 }
 
-.portfolio p {
-	color: #ffffff;
-	margin: 30px;
-	font-size: 20px;
-	font-family: serif;
+.mobileNav a:hover {
+    background-color: rgba(58, 58, 59, 0.22);
+    color: #ffffff;
 }
-
 
 section {
-	margin: 50px;
-	display: flex;
-	flex-flow: row wrap;
-	
+    display:flex;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    height: 470px;
+    margin-top: 100px;
+}
+
+.imageInner {
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.imageInner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.img {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.imgBack {
+    height: 100%;
+    background-color: rgba(91, 89, 84, 0.4);
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    color: white;
+    font-size: 23px;
+    padding: 10px 40px;
+    text-align: justify;
+}
+
+#header {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size:37px;
+}
+
+.aboutSection {
+    display: none;
+}
+
+.intro {
+    margin: 60px 0px 100px 0px;
+}
+
+.stillImage {
+    display: none;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio {
+    margin: 100px
+}
+
+.introPort h1 {
+    text-align: center;
+    font-size: 33px;
+    color: #939189;
+    margin-bottom: 100px;
+}
+
+.portfolioItems {
+    display: flex;
+    justify-content: space-between;
+    /*flex-flow: row wrap;*/
+    flex-wrap: wrap;
+    max-width:  1100px;
+}
+
+.port{
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.port a {
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.portImg {
+    width: 200px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #939189;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: rgba(147, 145, 137, 0.29); ;
+}
+
+footer {
+    text-align: center;
+}
+
+.footerLinks {
+    text-align: center;
+}
+
+.ContactLink {
+    padding: 20px;
+    color: #939189;
+    margin-bottom: 100px;
+}
+
+.ContactLink h1, a {
+    color: #939189;
+    text-align: center;
+    font-size: 33px;
+    margin: 0px 0px 50px 0px;
+}
+
+.ContactLink a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 40px;
+    border-radius: 5px;
+    margin: 50px 20px 0px 20px;
+}
+
+.ContactLink a:hover {
+    color: #ffffff;
+    background-color: rgba(147, 145, 137, 0.29); ;
+}
+
+@media screen and (max-width: 768px) {
+    .navLinks a {
+        font-size: 25px;
+        padding: 10px 12px;
+    }
+
+    a.smallAbout {
+        display: inline-block;
+    }
+
+    a.about {
+        display: none;
+    }
+
+    .container {
+        display: none;
+        height: 0;
+    }
+
+    .imageInner {
+        display: none
+    }
+
+    .aboutSection {
+        display: block;
+        width: 100%;
+        color: #918f8d;
+        text-align: justify;
+        padding: 40px 20px 0px 20px;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #smallHeader {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .stillImage {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .introPort h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #939189;
+        margin-bottom: 30px;
+    }
+
+    #portfolio {
+        margin-top: 130px;
+    }
+
+    .port{
+            padding: 20px;
+            width: 250px;
+            height: 350px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        .port a {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .ContactLink h1, a {
+            font-size: 25px;
+        }
+
+        section {
+            justify-content: center;
+        }
+
+    .ContactLink h1 {
+        font-size: 28px;
+    }
+
+    .footerLinks {
+        align-items: center;
+    }
+    .ContactLink a {
+        font-size: 25px;
+        padding: 5px 10px;
+        margin: 50px 0px 0px 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .navLinks {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+        left: 50% !important;
+        right: auto !important;
+        text-align: center !important;
+        transform: translate(-50%, 0) !important;
+    }
+
+    #mobileNavLinks {
+        position: relative;
+        display: inline-block;
+        z-index: 99;
+    }
+
+    .icon {
+        margin-bottom: 0px;
+    }
+
+    #mobileNavLinks a {
+        margin-bottom: 0px;
+    }
+
+    .stillImage {
+        margin: 0;
+    }
+
+    .container {
+        height: 0;
+    }
+
+    .intro {
+        margin: 0;
+    }
+
+    .aboutSection {
+        display: block;
+        margin: 80px 10px;
+    }
+
+    #about {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
 }
 
 
-.portLinks{
-	padding: 20px;
-}
-
-.portLinks a {
-	display: flex;
-	font-family: Serif;
-	font-size: 30px;
-	justify-content: center;
-}
-
-
-.imgOne {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgTwo {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgThree {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgFour {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-
-.contactLink h1, a {
-	color: #fcea97;
-}
-
-.contactLink {
-	padding: 20px;
-	margin-left: 10px;
-}
-
-.contactLink a {
-	font-size: 30px;
-}
 
 
 
-@media screen and (max-width: 768px){
-	.navLinks {
-		display: none;
-	}
-	
-	nav button {
-		display:block;
-	}
-	
-	section {
-		width: 500px;	
-	}
-	
-	main section {
-		flex-wrap: wrap;
-	}
-	
-	main section article:nth-child(2) {
-		margin: 0;
-	}
-	
-	.img div {
-		width: 100%;
-		margin: 50px;
-	}
-	
-	.about {
-		display: block;
-		position: relative;
-		top: 384px;
-	}
-	
-	.about h1 {
-		text-align: center;
-	}
-	
-	.portfolio h1, .introPort p {
-		display: block;
-		position: relative;
-		top: 284px;
-	}
-	
-	.portfolio h1 {
-		text-align: center;
-	}
-
-	.portLinks, .contactLink {
-		position: relative;
-		top: 284px;	
-	}
-	
-}
-
+/* gradient colors
+/*background: -webkit-linear-gradient(#eee, #333);*/
+/*-webkit-background-clip: text;*/
+/*-webkit-text-fill-color: transparent;*/
+/*}*/

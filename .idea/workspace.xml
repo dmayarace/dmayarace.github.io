@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1227e849-8adb-43eb-a9a5-aefdedfc2135" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dmayarace.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bucketList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bucketList.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clickGame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collectorsCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/introImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muppets.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muppets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/muppetsCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolioIntro.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolioIntro.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolioIntroS.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolioIntroShot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snakeCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snakeSweeper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TimsImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/TimsImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Timsimgtwo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/projectOne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectOne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20lj3k47GhLJTmacDHu8vDfUIhY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1227e849-8adb-43eb-a9a5-aefdedfc2135" name="Changes" comment="" />
+      <created>1636625872289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636625872289</updated>
+      <workItem from="1636625879278" duration="230000" />
+      <workItem from="1638462406493" duration="424000" />
+      <workItem from="1638468874483" duration="254000" />
+      <workItem from="1639131646190" duration="143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
