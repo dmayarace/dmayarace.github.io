@@ -8,121 +8,125 @@
 </head>
 
 <body>
-    <nav>
-        <div class ="navLinks">
+<nav>
+    <div class ="navLinks">
+        <a href="index.html">Home</a>
+        <a class="about" href="#about">About Me</a>
+        <a class="smallAbout" href="#smallAbout">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#ContactLink">Contact</a>
+    </div>
+    <div class="mobileNav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="menuBars"></i>Menu</a>
+        <div id="mobileNavLinks">
             <a href="index.html">Home</a>
-            <a class="about" href="#about">About Me</a>
-            <a class="smallAbout" href="#smallAbout">About Me</a>
+            <a href="#smallAbout" >About Me</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#ContactLink">Contact</a>
         </div>
-        <div class="mobileNav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="menuBars"></i>Menu</a>
-            <div id="mobileNavLinks">
-                <a href="index.html">Home</a>
-                <a href="#smallAbout" >About Me</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#ContactLink">Contact</a>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
-    <section class="intro">
-        <div>
-            <img class="stillImage"  src="introImg.jpg" alt="black and white reflection of Diana on computer screen with code">
-        </div>
-        <div class="container">
-            <div class="imageInner">
-                <div class="img imgFront">
-                    <img class="image"  src="introImg.jpg" alt="black and white reflection of Diana on computer screen with code">
-                </div>
-                <div class="imgBack">
-                    <div class="flipBack">
-                        <div id="about" class="back">
-                            <h1 id="header"> Welcome! I'm Diana.</h1>
-                                <p>If you had asked me if I could see myself entering this industry a few years ago I would have said <strong>you were loco.</strong></p>
-                                <p>And here I am now, training with <strong>iO Academy</strong> to complete their <strong>well renowned full-stack</strong> development course.
-                                    I have learnt an incredible amount, from building with PHP, JavaScript, and using adjacent tooling and frameworks.</p>
-                                <p>I am now a <strong>Certified Scrum Master</strong>, and had embraced the role in one of our projects. Being part of a scrum team
-                                    throughout the course has been a very insightful experience.</p>
-                                <p>If there is one thing I <strong>love</strong>. It's <strong>getting to know</strong> people and there can never be enough
-                                <strong> pizza!</strong></p>
-                        </div>
+<section class="intro">
+    <div class="stillImageDiv">
+        <img class="stillImage"  src="introImg.jpg" alt="black and white reflection of Diana on computer screen with code">
+    </div>
+    <div class="container">
+        <div class="imageInner">
+            <div class="img imgFront">
+                <img class="image"  src="introImg.jpg" alt="black and white reflection of Diana on computer screen with code">
+            </div>
+            <div class="imgBack">
+                <div class="flipBack">
+                    <div id="about" class="back">
+                        <h1 id="header"> Welcome! I'm Diana.</h1>
+                        <p>If you had asked me if I could see myself entering this industry a few years ago I would have said <strong>you were loco.</strong></p>
+                        <p>And here I am now, training with <strong>iO Academy</strong> to complete their <strong>well renowned full-stack</strong> development course.
+                            I have learnt an incredible amount, from building with PHP, JavaScript, and using adjacent tooling and frameworks.</p>
+                        <p>I am now a <strong>Certified Scrum Master</strong>, and had embraced the role in one of our projects. Being part of a scrum team
+                            throughout the course has been a very insightful experience.</p>
+                        <p>If there is one thing I <strong>love</strong>. It's <strong>getting to know</strong> people and there can never be enough
+                            <strong> pizza!</strong></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div id="smallAbout" class = "aboutSection">
-            <p id="smallHeader"> Welcome! I'm Diana.</p>
-            <div class="about">
-                <p>If you had asked me if I could see myself entering this industry a few years ago I would have said <strong>you were loco.</strong></p>
-                <p>And here I am now, training with <strong>iO Academy</strong> to complete their <strong>well renowned full-stack</strong> development course.
-                    I have learnt an incredible amount, from building with PHP, JavaScript, and using adjacent tooling and frameworks.</p>
-                <p>I am now a <strong>Certified Scrum Master</strong>, where I embraced the role, for one of our projects.
-                    As well as enjoying this position, being part of a scrum team throughout the course has been a very insightful experience.</p>
-                <p>If there is one thing I <strong>love</strong>. It's <strong>getting to know</strong> people and there can never be enough
-                    <strong> pizza!</strong></p>
-            </div>
+<section>
+    <div id="smallAbout" class = "aboutSection">
+        <p id="smallHeader"> Welcome! I'm Diana.</p>
+        <div class="about">
+            <p>If you had asked me if I could see myself entering this industry a few years ago I would have said <strong>you were loco.</strong></p>
+            <p>And here I am now, training with <strong>iO Academy</strong> to complete their <strong>well renowned full-stack</strong> development course.
+                I have learnt an incredible amount, from building with PHP, JavaScript, and using adjacent tooling and frameworks.</p>
+            <p>I am now a <strong>Certified Scrum Master</strong>, where I embraced the role, for one of our projects.
+                As well as enjoying this position, being part of a scrum team throughout the course has been a very insightful experience.</p>
+            <p>If there is one thing I <strong>love</strong>. It's <strong>getting to know</strong> people and there can never be enough
+                <strong> pizza!</strong></p>
+        </div>
+    </div>
+</section>
+
+<main id="portfolio">
+    <div class="introPort">
+        <h1>My Portfolio</h1>
+    </div>
+
+    <section class="portfolioItems">
+        <div class="port">
+            <a href="FEbucketList.html">Slim</a>
+            <img class="portImg" src="clickCode.png" alt="A section of front end code of bucket list">
+            <button type="button" onclick="window.location.href='FEbucketList.html'">FE BucketList App</button>
+        </div>
+
+        <div class ="port">
+            <a href="BEbucketList.html">Slim</a>
+            <img class="portImg" src="muppetsCode.png" alt="A section of back end code of bucket list">
+            <button type="button" onclick="window.location.href='BEbucketList.html'">BE BucketList App</button>
+        </div>
+
+        <div class="port">
+            <a href="snakeSweeper.html">JavaScript</a>
+            <img class="portImg" src="snakeCode.png" alt="A section of html code of SnakeSweeper">
+            <button type="button" onclick="window.location.href='snakeSweeper.html'">SnakeSweeper</button>
+        </div>
+
+        <div class="port">
+            <a href="muppets.html">OOP</a>
+            <img class="portImg" src="muppetsCode.png" alt="A section of html code of Muppets App">
+            <button type="button" onclick="window.location.href='muppets.html'">Muppets App</button>
+        </div>
+
+        <div class="port">
+            <a href="collectors.html">PHP</a>
+            <img class="portImg" src="collectorsCode.png" alt="A section of html code of Collectors App">
+            <button type="button" onclick="window.location.href='collectors.html'">Collectors App</button>
+        </div>
+
+        <div class="port">
+            <a href="FEbucketList.html">JavaScript</a>
+            <img class="portImg" src="clickCode.png" alt="A section of html code of click game">
+            <button type="button" onclick="window.location.href='clickGame.html'">ClickGame</button>
+        </div>
         </div>
     </section>
-
-    <section>
-        <main id="portfolio" class="portfolio">
-            <div class="introPort">
-                <h1>My Portfolio</h1>
-            </div>
-                <section class="portfolioItems">
-                    <div class="port">
-                        <a href="clickGame.html">JavaScript</a>
-                        <img class="portImg" src="clickCode.png" alt="A section of html code of clickGame">
-                        <button type="button" onclick="window.location.href='clickGame.html'">ClickGame</button>
-                     </div>
-                    <div class ="port">
-                        <a href="bucketList.html">Slim</a>
-                        <img class="portImg" src="muppetsCode.png" alt="A section of html code of collector">
-                        <button type="button" onclick="window.location.href='bucketList.html'">BucketList App</button>
-                    </div>
-                    <div class="port">
-                        <a href="snakeSweeper.html">JavaScript</a>
-                        <img class="portImg" src="snakeCode.png" alt="A section of html code of SnakeSweeper">
-                        <button type="button" onclick="window.location.href='snakeSweeper.html'">SnakeSweeper</button>
-                    </div>
-                     <div class="port">
-                        <a href="muppets.html">OOP</a>
-                        <img class="portImg" src="muppetsCode.png" alt="A section of html code of Muppets App">
-                         <button type="button" onclick="window.location.href='muppets.html'">Muppets App</button>
-                    </div>
-                    <div class="port">
-                        <a href="collectors.html">PHP</a>
-                        <img class="portImg" src="collectorsCode.png" alt="A section of html code of Collectors App">
-                        <button type="button" onclick="window.location.href='collectors.html'">Collectors App</button>
-                    </div>
-                    <div class="port">
-                        <a href="node.html">Node</a>
-                        <img class="portImg" src="muppetsCode.png" alt="A section of html code of SnakeSweeper">
-                        <button type="button" onclick="window.location.href='clickGame.html'">ClickGame</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </section>
+</main>
 
 
-    </section>
-        <footer>
-            <div id="ContactLink" class="ContactLink">
-                <h1>Contact</h1>
-                <div class="footerLinks">
-                    <a href="mailto:dianarace@hotmail.com">Email</a>
-                    <a href="https://www.linkedin.com/in/diana-race/">Linkedin</a>
-                    <a href="https://github.com/dmayarace">GitHub</a>
-                </div>
-            </div>
-        </footer>
-    </section>
+</section>
+<footer>
+    <div id="ContactLink" class="ContactLink">
+        <h1>Contact</h1>
+        <div class="footerLinks">
+            <a href="mailto:dianarace@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/diana-race/">Linkedin</a>
+            <a href="https://github.com/dmayarace">GitHub</a>
+        </div>
+    </div>
+</footer>
+</section>
 
 </body>
 </html>
