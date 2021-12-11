@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-#vid{
+#vid {
     width: 100%;
     height: 100vh;
 }
@@ -95,7 +95,7 @@ a.smallAbout {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 8px;
-    font-size:37px;
+    font-size: 37px;
 }
 
 .aboutSection {
@@ -103,7 +103,7 @@ a.smallAbout {
 }
 
 .intro {
-    margin: 60px 0px 100px 0px;
+    margin: 60px 0 100px 0;
     display: flex;
     justify-content: center;
 }
@@ -113,6 +113,32 @@ a.smallAbout {
     width: 100%;
     border-radius: 16px;
     box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.enterImage {
+    color: #939189;
+    padding: 5px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    animation: showup 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #portfolio {
@@ -125,6 +151,7 @@ a.smallAbout {
 .introPort {
     width: 100%;
 }
+
 .introPort h1 {
     text-align: center;
     font-size: 33px;
@@ -136,10 +163,10 @@ a.smallAbout {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width:  1100px;
+    max-width: 1100px;
 }
 
-.port{
+.port {
     padding: 20px;
     width: 300px;
     height: 400px;
@@ -156,7 +183,7 @@ a.smallAbout {
 
 .portImg {
     width: 200px;
-    height:150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +197,6 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
     font-size: 18px;
     padding: 10px;
     background-color: #ffffff;
@@ -179,10 +205,36 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    color: #ffffff;
-    background-color: rgba(147, 145, 137, 0.29); ;
+#feButt:hover {
+    background-color: #0de5d0 !important;
+    color: #343494 !important;
 }
+
+#beButt:hover {
+    background-color: #158857 !important;
+    color: #ea5dc7 !important;
+}
+
+#snakeButt:hover {
+    background-color: #355f4d !important;
+    color: #E0D8DE !important;
+}
+
+#collButt:hover {
+    background-color: #DAA520 !important;
+    color: #b8860b !important;
+}
+
+#muppButt:hover {
+    background-color: #FEFF57 !important;
+    color: #729943 !important;
+}
+
+#clickButt:hover {
+    background-color: #fbc605ad !important;
+    color: #5f9ea0d9 !important;
+}
+
 
 footer {
     text-align: center;
@@ -202,7 +254,7 @@ footer {
     color: #939189;
     text-align: center;
     font-size: 33px;
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
 }
 
 .ContactLink a {
@@ -210,43 +262,168 @@ footer {
     font-size: 25px;
     padding: 5px 40px;
     border-radius: 5px;
-    margin: 50px 20px 0px 20px;
+    margin: 50px 20px 0 20px;
 }
 
 .ContactLink a:hover {
     color: #ffffff;
-    background-color: rgba(147, 145, 137, 0.29); ;
+    background-color: rgba(147, 145, 137, 0.29);;
 }
 
-#project {
-    margin: 10%;
-    align-content: center;
-}
 
-.projImg {
-    display: flex;
-    align-content: center;
-}
-.projectTitle {
+.projectTitle h1 {
     text-align: center;
-    font-size: 33px;
+    font-size: 70px;
     color: #939189;
-    margin-bottom: 100px;
+    margin: 100px 0 30px 0;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.feGit:hover {
+    background-color: #0de5d0;
+    border-radius: 20px;
+}
+
+.feLive:hover {
+    background-color: #0de5d0;
+}
+
+
+.beGit:hover {
+    background-color: #158857;
+    border-radius: 20px;
+}
+
+.beLive:hover {
+    background-color: #158857;
+}
+
+.snakeGit:hover {
+    background-color: #355f4d;
+    border-radius: 20px;
+}
+
+.snakeLive:hover {
+    background-color: #355f4d;
+}
+
+.collGit:hover {
+    background-color: #DAA520;
+    border-radius: 20px;
+}
+
+.collLive:hover {
+    background-color: #DAA520;
+}
+
+
+.muppGit:hover {
+    background-color: #FEFF57;
+    border-radius: 20px;
+}
+
+.muppLive:hover {
+    background-color: #FEFF57;
+}
+
+.clickGit:hover {
+    background-color: #fba40594;
+    border-radius: 20px;
+}
+
+.clickLive:hover {
+    background-color: #fba40594;
+}
+
+#icons .github {
+  padding: 10px;
+}
+
+#icons .live {
+    padding: 10px;
 }
 
 .individualImg {
+    display: flex;
+    align-content: center;
     margin: auto;
-    width: 70%;
+    width: 45%;
     border-radius: 10px;
     box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .blurb {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 25px;
+    display: flex;
+    text-align: justify;
+    margin: 60px auto 0 auto;
+    width: 65%;
+    font-size: 20px;
     color: #939189;
 }
+
+.blurb a {
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #729943;
+}
+
+.fea {
+    color:  #343494 !important;
+}
+
+.fea:hover {
+    color: #0de5d0 !important;
+}
+
+
+.bea {
+    color:  #ea5dc7 !important;
+}
+
+.bea:hover {
+    color: #158857 !important;
+}
+
+.snakea {
+
+    color:  #593837 !important;
+}
+
+.snakea:hover {
+    color: #355f4d !important;
+}
+
+.colla {
+
+    color: #DAA520 !important;
+}
+
+.colla:hover {
+    color: #b8860b !important;
+}
+
+.muppa {
+    color: #729943 !important;
+}
+
+.muppa:hover {
+    color: #FEFF57 !important;
+}
+
+.clicka {
+    color: #5f9ea0d9 !important;
+}
+.clicka:hover {
+    color:  #fba40594 !important;
+}
+
+
 
 @media screen and (max-width: 830px) {
     .navLinks a {
@@ -276,7 +453,11 @@ footer {
         width: 100%;
         color: #918f8d;
         text-align: justify;
-        padding: 40px 20px 0px 20px;
+        padding: 40px 30px 0 30px;
+    }
+
+    .enterImage {
+        display: none;
     }
 
     #about {
@@ -311,7 +492,7 @@ footer {
         margin-top: 130px;
     }
 
-    .port{
+    .port {
         padding: 20px;
         width: 250px;
         height: 350px;
@@ -339,13 +520,23 @@ footer {
     .footerLinks {
         align-items: center;
     }
+
     .ContactLink a {
         font-size: 25px;
         padding: 5px 10px;
-        margin: 50px 0px 0px 0px;
+        margin: 50px 0 0 0;
     }
 
+    .individualImg {
+        width: 50%;
+    }
+
+    .blurb {
+        margin: 40px auto 0 auto;
+        width: 70%;
+    }
 }
+
 
 @media screen and (max-width: 735px) {
     .portfolioItems {
@@ -353,6 +544,7 @@ footer {
         justify-content: center;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .navLinks {
@@ -374,11 +566,11 @@ footer {
     }
 
     .icon {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     #mobileNavLinks a {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .stillImage {
@@ -402,5 +594,17 @@ footer {
         font-size: 16px;
         margin-bottom: 30px;
     }
+    .projectTitle h1 {
+        font-size: 40px;
+    }
 
+    .individualImg {
+        width: 100%;
+    }
+
+    .blurb {
+        margin: 20px auto 0 auto;
+        width: 90%;
+        font-size: 20px;
+    }
 }
