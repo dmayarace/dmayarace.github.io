@@ -270,6 +270,20 @@ footer {
     background-color: rgba(147, 145, 137, 0.29);;
 }
 
+#cvLinks a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cvLink {
+    width:7%;
+    align-self: center;
+}
+
+
+
 
 .projectTitle h1 {
     text-align: center;
