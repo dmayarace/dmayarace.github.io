@@ -10,25 +10,18 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
     margin-top: 180px;
 }
 
 .navLinks a {
-    color: #939189;
     font-size: 30px;
     text-decoration: none;
     padding: 5px 40px;
     border-radius: 5px;
 }
 
-a.smallAbout {
-    display: none;
-}
-
 .navLinks a:hover {
     background-color: rgba(147, 145, 137, 0.29);
-    color: #ffffff;
 }
 
 .mobileNav #mobileNavLinks {
@@ -42,7 +35,6 @@ a.smallAbout {
 }
 
 .mobileNav a {
-    color: #939189;
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
@@ -52,6 +44,19 @@ a.smallAbout {
 .mobileNav a:hover {
     background-color: rgba(58, 58, 59, 0.22);
     color: #ffffff;
+}
+
+.intro {
+    margin: 60px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.stillImage {
+    display: none;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -65,10 +70,6 @@ a.smallAbout {
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
-}
-
-.imageInner.is-flipped {
-    transform: rotateY(180deg);
 }
 
 .img {
@@ -91,6 +92,10 @@ a.smallAbout {
     text-align: justify;
 }
 
+.imageInner.is-flipped {
+    transform: rotateY(180deg);
+}
+
 #header {
     text-align: center;
     margin-top: 15px;
@@ -102,17 +107,8 @@ a.smallAbout {
     display: none;
 }
 
-.intro {
-    margin: 60px 0 100px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.stillImage {
+a.smallAbout {
     display: none;
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
@@ -211,13 +207,13 @@ button {
 }
 
 #beButt:hover {
-    background-color: #158857 !important;
-    color: #ea5dc7 !important;
+    background-color: #8d6e9d !important;
+    color: #536647 !important;
 }
 
 #snakeButt:hover {
     background-color: #355f4d !important;
-    color: #E0D8DE !important;
+    color: #d9e57e !important;
 }
 
 #collButt:hover {
@@ -252,7 +248,6 @@ footer {
 
 .ContactLink h1, a {
     color: #939189;
-    text-align: center;
     font-size: 33px;
     margin: 0 0 50px 0;
 }
@@ -278,11 +273,9 @@ footer {
 }
 
 .cvLink {
-    width:7%;
+    width: 60px;
     align-self: center;
 }
-
-
 
 
 .projectTitle h1 {
@@ -309,21 +302,21 @@ footer {
 
 
 .beGit:hover {
-    background-color: #158857;
+    background-color: #8d6e9d;
     border-radius: 20px;
 }
 
 .beLive:hover {
-    background-color: #158857;
+    background-color: #8d6e9d;
 }
 
 .snakeGit:hover {
-    background-color: #355f4d;
+    background-color: #d9e57e;
     border-radius: 20px;
 }
 
 .snakeLive:hover {
-    background-color: #355f4d;
+    background-color: #d9e57e;
 }
 
 .collGit:hover {
@@ -395,22 +388,21 @@ footer {
     color: #0de5d0 !important;
 }
 
-
 .bea {
-    color:  #ea5dc7 !important;
+    color: #536647 !important;
 }
 
 .bea:hover {
-    color: #158857 !important;
+    color: #8d6e9d !important;
 }
 
 .snakea {
 
-    color:  #593837 !important;
+    color: #355f4d !important;
 }
 
 .snakea:hover {
-    color: #355f4d !important;
+    color: #d9e57e !important;
 }
 
 .colla {
@@ -433,6 +425,7 @@ footer {
 .clicka {
     color: #5f9ea0d9 !important;
 }
+
 .clicka:hover {
     color:  #fba40594 !important;
 }
@@ -453,6 +446,11 @@ footer {
         display: none;
     }
 
+    .stillImage {
+        display: block;
+        margin-top: 50px;
+    }
+
     .container {
         display: none;
         height: 0;
@@ -460,14 +458,6 @@ footer {
 
     .imageInner {
         display: none
-    }
-
-    .aboutSection {
-        display: block;
-        width: 100%;
-        color: #918f8d;
-        text-align: justify;
-        padding: 40px 30px 0 30px;
     }
 
     .enterImage {
@@ -478,6 +468,18 @@ footer {
         display: none;
     }
 
+    .about {
+        font-size: 20px;
+    }
+
+    .aboutSection {
+        display: block;
+        width: 100%;
+        color: #918f8d;
+        text-align: justify;
+        padding: 40px 30px 0 30px;
+    }
+
     #smallHeader {
         font-size: 28px;
         font-weight: bold;
@@ -485,29 +487,16 @@ footer {
         margin-bottom: 50px;
     }
 
-    .stillImage {
-        display: block;
-        margin-top: 50px;
-    }
-
-    .about {
-        font-size: 20px;
-    }
-
-    .introPort h1 {
-        text-align: center;
-        font-size: 28px;
-        font-weight: bold;
-        color: #939189;
-        margin-bottom: 30px;
-    }
-
     #portfolio {
         margin-top: 130px;
     }
 
+    .introPort h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
     .port {
-        padding: 20px;
         width: 250px;
         height: 350px;
         margin-bottom: 30px;
@@ -519,20 +508,12 @@ footer {
         margin-bottom: 5px;
     }
 
-    .ContactLink h1, a {
-        font-size: 25px;
-    }
-
     section {
         justify-content: center;
     }
 
     .ContactLink h1 {
         font-size: 28px;
-    }
-
-    .footerLinks {
-        align-items: center;
     }
 
     .ContactLink a {
@@ -568,7 +549,6 @@ footer {
     .mobileNav {
         display: block;
         left: 50% !important;
-        right: auto !important;
         text-align: center !important;
         transform: translate(-50%, 0) !important;
     }
@@ -601,7 +581,8 @@ footer {
 
     .aboutSection {
         display: block;
-        margin: 80px 10px;
+        margin-top: 80px;
+        padding: 10px;
     }
 
     #about {
@@ -610,6 +591,10 @@ footer {
     }
     .projectTitle h1 {
         font-size: 40px;
+    }
+
+    .ContactLink a {
+        font-size: 20px;
     }
 
     .individualImg {
@@ -621,4 +606,20 @@ footer {
         width: 90%;
         font-size: 20px;
     }
+}
+
+@media screen and (max-width: 310px) {
+     .aboutSection {
+         padding: 5px;
+    }
+
+    #portfolio {
+        margin-top: 50px;
+    }
+
+    .ContactLink a {
+        display: flex;
+        justify-content: center;
+    }
+
 }
