@@ -1,187 +1,633 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-	background-color: #000000;
-	margin: 0px;
-	margin-top:30px;
+#vid {
+    width: 100%;
+    height: 100vh;
 }
 
 nav {
-	display: flex;
-	justify-content: center;
-	padding: 20px;
-	background-color: #000000;
-	color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
 }
 
 .navLinks a {
-	color: #ffffff;
-	margin-left: 50px;
-	font-family: Serif;
-	font-size: 30px;
-	text-decoration: none;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 5px 40px;
+    border-radius: 5px;
 }
 
-nav button {
-	display: none;
-	border-radius: 12px;
-	padding: 10px 30px;
-	background-color: #fcea97;
-	font-size: 24px;
-	color: #262002;
-	font-family: Georgia;
+.navLinks a:hover {
+    background-color: rgba(147, 145, 137, 0.29);
+}
+
+.mobileNav #mobileNavLinks {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+    position: absolute;
+    top: 10px;
+}
+
+.mobileNav a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.mobileNav a:hover {
+    background-color: rgba(58, 58, 59, 0.22);
+    color: #ffffff;
+}
+
+.intro {
+    margin: 60px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.stillImage {
+    display: none;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 800px;
+    height: 470px;
+    margin-top: 100px;
+}
+
+.imageInner {
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.imgBack {
+    height: 100%;
+    background-color: rgba(91, 89, 84, 0.4);
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    color: white;
+    font-size: 23px;
+    padding: 10px 40px;
+    text-align: justify;
+}
+
+.imageInner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+#header {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 37px;
+}
+
+.aboutSection {
+    display: none;
+}
+
+a.smallAbout {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.enterImage {
+    color: #939189;
+    padding: 5px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    animation: showup 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px
+}
+
+.introPort {
+    width: 100%;
+}
+
+.introPort h1 {
+    text-align: center;
+    font-size: 33px;
+    color: #939189;
+    margin-bottom: 100px;
+}
+
+.portfolioItems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+.port {
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.port a {
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.portImg {
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #939189;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+#feButt:hover {
+    background-color: #0de5d0 !important;
+    color: #343494 !important;
+}
+
+#beButt:hover {
+    background-color: #8d6e9d !important;
+    color: #536647 !important;
+}
+
+#snakeButt:hover {
+    background-color: #355f4d !important;
+    color: #d9e57e !important;
+}
+
+#collButt:hover {
+    background-color: #DAA520 !important;
+    color: #b8860b !important;
+}
+
+#muppButt:hover {
+    background-color: #FEFF57 !important;
+    color: #729943 !important;
+}
+
+#clickButt:hover {
+    background-color: #fbc605ad !important;
+    color: #5f9ea0d9 !important;
 }
 
 
-div.img {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	background-image: url("projectOne.jpg");
-	background-size: cover;
+footer {
+    text-align: center;
+}
+
+.footerLinks {
+    text-align: center;
+}
+
+.ContactLink {
+    padding: 20px;
+    color: #939189;
+    margin-bottom: 100px;
+}
+
+.ContactLink h1, a {
+    color: #939189;
+    font-size: 33px;
+    margin: 0 0 50px 0;
+}
+
+.ContactLink a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 40px;
+    border-radius: 5px;
+    margin: 50px 20px 0 20px;
+}
+
+.ContactLink a:hover {
+    color: #ffffff;
+    background-color: rgba(147, 145, 137, 0.29);;
+}
+
+#cvLinks a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cvLink {
+    width: 60px;
+    align-self: center;
 }
 
 
-.about {
-	width: 40%;
-	margin: 30px;
-	color: #ffffff;
-	font-size: 20px;
-	font-family: serif;
+.projectTitle h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #939189;
+    margin: 100px 0 30px 0;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.feGit:hover {
+    background-color: #0de5d0;
+    border-radius: 20px;
+}
+
+.feLive:hover {
+    background-color: #0de5d0;
 }
 
 
-.about h1, .portfolio h1 {
-	font-size: 40px;
-	color: #fcea97;
-	font-family: Georgia;
+.beGit:hover {
+    background-color: #8d6e9d;
+    border-radius: 20px;
 }
 
-.portfolio h1 {
-	margin-left: 30px;
-	margin-top: 50px;
+.beLive:hover {
+    background-color: #8d6e9d;
 }
 
-.portfolio p {
-	color: #ffffff;
-	margin: 30px;
-	font-size: 20px;
-	font-family: serif;
+.snakeGit:hover {
+    background-color: #d9e57e;
+    border-radius: 20px;
 }
 
-
-section {
-	margin: 50px;
-	display: flex;
-	flex-flow: row wrap;
-	
+.snakeLive:hover {
+    background-color: #d9e57e;
 }
 
-
-.portLinks{
-	padding: 20px;
+.collGit:hover {
+    background-color: #DAA520;
+    border-radius: 20px;
 }
 
-.portLinks a {
-	display: flex;
-	font-family: Serif;
-	font-size: 30px;
-	justify-content: center;
+.collLive:hover {
+    background-color: #DAA520;
 }
 
 
-.imgOne {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgTwo {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgThree {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
-}
-.imgFour {
-	background-image: url("images/Timsimgtwo.jpg");
-	background-size: cover;
-	width: 400px;
-	height: 269px;
+.muppGit:hover {
+    background-color: #FEFF57;
+    border-radius: 20px;
 }
 
-.contactLink h1, a {
-	color: #fcea97;
+.muppLive:hover {
+    background-color: #FEFF57;
 }
 
-.contactLink {
-	padding: 20px;
-	margin-left: 10px;
+.clickGit:hover {
+    background-color: #fba40594;
+    border-radius: 20px;
 }
 
-.contactLink a {
-	font-size: 30px;
+.clickLive:hover {
+    background-color: #fba40594;
+}
+
+#icons .github {
+  padding: 10px;
+}
+
+#icons .live {
+    padding: 10px;
+}
+
+.individualImg {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.blurb {
+    display: flex;
+    text-align: justify;
+    margin: 60px auto 0 auto;
+    width: 65%;
+    font-size: 20px;
+    color: #939189;
+}
+
+.blurb a {
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #729943;
+}
+
+.fea {
+    color:  #343494 !important;
+}
+
+.fea:hover {
+    color: #0de5d0 !important;
+}
+
+.bea {
+    color: #536647 !important;
+}
+
+.bea:hover {
+    color: #8d6e9d !important;
+}
+
+.snakea {
+
+    color: #355f4d !important;
+}
+
+.snakea:hover {
+    color: #d9e57e !important;
+}
+
+.colla {
+
+    color: #DAA520 !important;
+}
+
+.colla:hover {
+    color: #b8860b !important;
+}
+
+.muppa {
+    color: #729943 !important;
+}
+
+.muppa:hover {
+    color: #FEFF57 !important;
+}
+
+.clicka {
+    color: #5f9ea0d9 !important;
+}
+
+.clicka:hover {
+    color:  #fba40594 !important;
 }
 
 
 
-@media screen and (max-width: 768px){
-	.navLinks {
-		display: none;
-	}
-	
-	nav button {
-		display:block;
-	}
-	
-	section {
-		width: 500px;	
-	}
-	
-	main section {
-		flex-wrap: wrap;
-	}
-	
-	main section article:nth-child(2) {
-		margin: 0;
-	}
-	
-	.img div {
-		width: 100%;
-		margin: 50px;
-	}
-	
-	.about {
-		display: block;
-		position: relative;
-		top: 384px;
-	}
-	
-	.about h1 {
-		text-align: center;
-	}
-	
-	.portfolio h1, .introPort p {
-		display: block;
-		position: relative;
-		top: 284px;
-	}
-	
-	.portfolio h1 {
-		text-align: center;
-	}
+@media screen and (max-width: 830px) {
+    .navLinks a {
+        font-size: 25px;
+        padding: 10px 12px;
+    }
 
-	.portLinks, .contactLink {
-		position: relative;
-		top: 284px;	
-	}
-	
+    a.smallAbout {
+        display: inline-block;
+    }
+
+    a.about {
+        display: none;
+    }
+
+    .stillImage {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .container {
+        display: none;
+        height: 0;
+    }
+
+    .imageInner {
+        display: none
+    }
+
+    .enterImage {
+        display: none;
+    }
+
+    #about {
+        display: none;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .aboutSection {
+        display: block;
+        width: 100%;
+        color: #918f8d;
+        text-align: justify;
+        padding: 40px 30px 0 30px;
+    }
+
+    #smallHeader {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #portfolio {
+        margin-top: 130px;
+    }
+
+    .introPort h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .port {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .port a {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    section {
+        justify-content: center;
+    }
+
+    .ContactLink h1 {
+        font-size: 28px;
+    }
+
+    .ContactLink a {
+        font-size: 25px;
+        padding: 5px 10px;
+        margin: 50px 0 0 0;
+    }
+
+    .individualImg {
+        width: 50%;
+    }
+
+    .blurb {
+        margin: 40px auto 0 auto;
+        width: 70%;
+    }
 }
 
+
+@media screen and (max-width: 735px) {
+    .portfolioItems {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navLinks {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+        left: 50% !important;
+        text-align: center !important;
+        transform: translate(-50%, 0) !important;
+    }
+
+    #mobileNavLinks {
+        position: relative;
+        display: inline-block;
+        z-index: 99;
+    }
+
+    .icon {
+        margin-bottom: 0;
+    }
+
+    #mobileNavLinks a {
+        margin-bottom: 0;
+    }
+
+    .stillImage {
+        margin: 0;
+    }
+
+    .container {
+        height: 0;
+    }
+
+    .intro {
+        margin: 0;
+    }
+
+    .aboutSection {
+        display: block;
+        margin-top: 80px;
+        padding: 10px;
+    }
+
+    .projectTitle h1 {
+        font-size: 40px;
+    }
+
+    .ContactLink a {
+        font-size: 20px;
+    }
+
+    .individualImg {
+        width: 100%;
+    }
+
+    .blurb {
+        margin: 20px auto 0 auto;
+        width: 90%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+     .aboutSection {
+         padding: 5px;
+    }
+
+    #smallHeader {
+        font-size: 25px;
+    }
+
+    .about {
+        font-size: 18px;
+    }
+
+    #portfolio {
+        margin: 50px 0 0 0;
+    }
+
+    .introPort h1 {
+       font-size: 25px;
+    }
+
+    .ContactLink a {
+        display: flex;
+        justify-content: center;
+    }
+
+}
