@@ -5,6 +5,7 @@
 }
 
 #vid {
+    background-color: #ffeebb75;
     width: 100%;
     height: 100vh;
 }
@@ -328,7 +329,6 @@ footer {
     background-color: #DAA520;
 }
 
-
 .muppGit:hover {
     background-color: #FEFF57;
     border-radius: 20px;
@@ -359,16 +359,19 @@ footer {
     display: flex;
     align-content: center;
     margin: auto;
-    width: 45%;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 6px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+div.blurb {
+    margin: 60px auto 0 auto;
+    width: 75%;
 }
 
 .blurb {
     display: flex;
     text-align: justify;
-    margin: 60px auto 0 auto;
-    width: 65%;
     font-size: 20px;
     color: #939189;
 }
@@ -430,6 +433,11 @@ footer {
     color:  #fba40594 !important;
 }
 
+@media screen and (max-width: 930px) {
+    div.blurb {
+        width: 85%;
+    }
+}
 
 
 @media screen and (max-width: 830px) {
@@ -522,13 +530,12 @@ footer {
         margin: 50px 0 0 0;
     }
 
-    .individualImg {
-        width: 50%;
+    .projectTitle h1 {
+        font-size: 60px;
     }
 
-    .blurb {
-        margin: 40px auto 0 auto;
-        width: 70%;
+    div.blurb {
+        width: 90%;
     }
 }
 
@@ -537,6 +544,28 @@ footer {
     .portfolioItems {
         display: flex;
         justify-content: center;
+    }
+
+    .projectTitle h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .individualImg {
+        width: 100%;
+    }
+
+    .about {
+        font-size: 18px;
+    }
+
+    div.blurb {
+        width: 95%;
+    }
+
+    .blurb {
+        font-size: 18px;
     }
 }
 
@@ -593,28 +622,28 @@ footer {
         font-size: 20px;
     }
 
-    .individualImg {
-        width: 100%;
-    }
-
-    .blurb {
-        margin: 20px auto 0 auto;
-        width: 90%;
-        font-size: 20px;
+    div.blurb {
+    margin: 50px auto 0 auto;
     }
 }
 
 @media screen and (max-width: 310px) {
+    #vid {
+        height: 50vh;
+    }
+
      .aboutSection {
          padding: 5px;
+         margin-top: 40px;
     }
 
     #smallHeader {
         font-size: 25px;
+        margin-bottom: 0;
     }
 
     .about {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #portfolio {
@@ -630,4 +659,7 @@ footer {
         justify-content: center;
     }
 
+    .blurb {
+        font-size: 17px;
+    }
 }
