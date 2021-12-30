@@ -5,9 +5,13 @@
 }
 
 #vid {
-    background-color: #ffeebb75;
     width: 100%;
     height: 100vh;
+}
+
+#vidMobile {
+    display: none !important;
+    width: 100%;
 }
 
 nav {
@@ -24,6 +28,7 @@ nav {
 }
 
 .navLinks a:hover {
+    color: #ffffff;
     background-color: rgba(147, 145, 137, 0.29);
 }
 
@@ -629,7 +634,11 @@ div.blurb {
 
 @media screen and (max-width: 310px) {
     #vid {
-        height: 50vh;
+       display: none !important;
+    }
+    
+    #vidMobile {
+        display: block !important;
     }
 
      .aboutSection {
