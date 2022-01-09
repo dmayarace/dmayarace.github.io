@@ -115,6 +115,16 @@ nav {
     display: none;
 }
 
+.top {
+    text-align: center;
+}
+
+.top a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
 a.smallAbout {
     display: none;
 }
@@ -284,11 +294,34 @@ footer {
 }
 
 
-.projectTitle h1 {
+.projectTitle {
     text-align: center;
-    font-size: 70px;
-    color: #939189;
+    font-size: 50px;
     margin: 100px 0 30px 0;
+}
+
+.titleSnake {
+    color:#355f4d !important;
+}
+
+.titleMuppets {
+    color:#729943 !important;
+}
+
+.titleFE {
+    color:  #343494 !important;
+}
+
+.titleColl {
+    color: #DAA520 !important;
+}
+
+.titleClick {
+    color: #5f9ea0d9 !important;
+}
+
+.titleBE {
+    color:  #536647 !important;
 }
 
 #icons {
@@ -375,7 +408,6 @@ div.blurb {
 }
 
 .blurb {
-    display: flex;
     text-align: justify;
     font-size: 20px;
     color: #939189;
@@ -383,9 +415,7 @@ div.blurb {
 
 .blurb a {
     text-decoration: none;
-    padding-bottom: 20px;
-    font-size: 20px;
-    color: #729943;
+    font-size: 20px;  
 }
 
 .fea {
@@ -438,9 +468,17 @@ div.blurb {
     color:  #fba40594 !important;
 }
 
+.backButt {
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 930px) {
     div.blurb {
         width: 85%;
+    }
+
+    .projectTitle {
+        font-size: 40px;
     }
 }
 
@@ -535,10 +573,6 @@ div.blurb {
         margin: 50px 0 0 0;
     }
 
-    .projectTitle h1 {
-        font-size: 60px;
-    }
-
     div.blurb {
         width: 90%;
     }
@@ -551,8 +585,8 @@ div.blurb {
         justify-content: center;
     }
 
-    .projectTitle h1 {
-        font-size: 50px;
+    .projectTitle {
+        font-size: 30px;
     }
 }
 
@@ -572,10 +606,22 @@ div.blurb {
     .blurb {
         font-size: 18px;
     }
+
+    .projectTitle {
+        font-size: 25px;
+    }
 }
 
 
 @media screen and (max-width: 480px) {
+        #vid {
+       display: none !important;
+    }
+    
+    #vidMobile {
+        display: block !important;
+    }
+
     .navLinks {
         display: none;
     }
@@ -619,8 +665,8 @@ div.blurb {
         padding: 10px;
     }
 
-    .projectTitle h1 {
-        font-size: 40px;
+    .projectTitle {
+        font-size: 25px;
     }
 
     .ContactLink a {
@@ -633,14 +679,6 @@ div.blurb {
 }
 
 @media screen and (max-width: 310px) {
-    #vid {
-       display: none !important;
-    }
-    
-    #vidMobile {
-        display: block !important;
-    }
-
      .aboutSection {
          padding: 5px;
          margin-top: 40px;
@@ -670,5 +708,9 @@ div.blurb {
 
     .blurb {
         font-size: 17px;
+    }
+
+    .projectTitle {
+        font-size: 20px;
     }
 }
