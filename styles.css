@@ -218,8 +218,8 @@ button {
 }
 
 #feButt:hover {
-    background-color: #0de5d0 !important;
-    color: #343494 !important;
+    background-color: #f5ccba !important;
+    color: #4c495a !important;
 }
 
 #beButt:hover {
@@ -309,7 +309,7 @@ footer {
 }
 
 .titleFE {
-    color:  #343494 !important;
+    color:  #4c495a !important;
 }
 
 .titleColl {
@@ -331,12 +331,12 @@ footer {
 }
 
 .feGit:hover {
-    background-color: #0de5d0;
+    background-color: #f5ccba;
     border-radius: 20px;
 }
 
 .feLive:hover {
-    background-color: #0de5d0;
+    background-color: #f5ccba;
 }
 
 
@@ -419,11 +419,11 @@ div.blurb {
 }
 
 .fea {
-    color:  #343494 !important;
+    color:  #4c495a !important;
 }
 
 .fea:hover {
-    color: #0de5d0 !important;
+    color: #f5ccba !important;
 }
 
 .bea {
